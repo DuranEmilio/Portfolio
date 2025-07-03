@@ -1,8 +1,10 @@
 ---
 import Badge from "../components/Badge.astro";
 import Experience from "../components/Experience.astro";
+import Projects from "../components/Projects.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import SocialPill from "../components/SocialPill.astro";
+import Code from "../icons/Code.astro";
 import GitHub from "../icons/GitHub.astro";
 import LinkedIn from "../icons/LinkedIn.astro";
 import Mail from "../icons/Mail.astro";
@@ -21,8 +23,10 @@ import Layout from "../layouts/Layout.astro";
 				src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small_2x/default-avatar-icon-of-social-media-user-vector.jpg"
 				alt="logo"
 			/>
-			<h1 class="text-white text-3xl md:text-4xl  xl:text-5xl font-bold flex flex-row gap-x-4 lg:pb-10 pb-6">
-				Hey, soy Emilio <a 
+			<h1
+				class="text-white text-3xl md:text-4xl xl:text-5xl font-bold flex flex-row gap-x-4 lg:pb-10 pb-6"
+			>
+				Hey, soy Emilio <a
 					href="/"
 					target="_blank"
 					rel="noopener"
@@ -32,8 +36,8 @@ import Layout from "../layouts/Layout.astro";
 			</h1>
 			<h2 class="lg:text-2xl text-xl opacity-80 text-wrap max-w-[700px]">
 				<span>+4 años de experiencia. </span>
-				<span class="text-yellow-200/90"
-					>Desarrollador web y analista de datos</span
+				<span class="text-yellow-200"
+					>Desarrollador web, programador Frontend y Backend</span
 				>.
 				<span class="text-red-200/90"> De Colima, Mexico</span>.
 				<span class="opacity-80">
@@ -58,11 +62,19 @@ import Layout from "../layouts/Layout.astro";
 		</SectionContainer>
 
 		<SectionContainer id="experience">
-			<h2 class="text-2xl font-semibold mb-6 flex items-center gap-x-2">
+			<h2 class="text-3xl font-semibold mb-6 flex items-center gap-x-2">
 				<SuitCase class="size-6" />
 				Expeiencia laboral
 			</h2>
 			<Experience />
+		</SectionContainer>
+
+		<SectionContainer id="projects">
+			<h2 class="text-3xl font-semibold mb-6 flex items-center gap-x-2">
+				<Code class="size-6" />
+				Proyectos
+			</h2>
+			<Projects />
 		</SectionContainer>
 	</main>
 </Layout>
