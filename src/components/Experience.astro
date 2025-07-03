@@ -1,30 +1,30 @@
 ---
 import ExperienceItem from "./ExperienceItem.astro";
-import SectionContainer from "./SectionContainer.astro";
 
 const EXPERIENCE = [
   {
-    date: "February 2022",
-    title: "Application UI code in Tailwind CSS",
+    date: "Actualmente",
+    title: "Desarrollador backend junior en Xilion",
     description:
-      "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
-    link: "#",
+      "Trabajo en el desarrollo de aplicaciones backend utilizando Node.js, Express y Firebese. Colaboro con un equipo de desarrolladores para crear soluciones escalables y eficientes.",
   },
   {
-    date: "March 2022",
-    title: "Marketing UI design in Figma",
+    date: "Enero 3024",
+    title: "Principal Frontend Engineer",
     description:
-      "All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.",
+      "Lidero un equipo de desarrolladores frontend en el proyecto de Yimi-PDV. Trabajo con tecnologías como React, Next.js y TypeScript.",
+    link: "https://yimiglobal.com",
   },
   {
-    date: "April 2022",
-    title: "E-Commerce UI code in Tailwind CSS",
+    date: "Junio 2022",
+    title: "Intern en Xilion",
     description:
-      "Get started with dozens of web components and interactive elements built on top of Tailwind CSS.",
+      "Participé en un programa de pasantías donde aprendí sobre desarrollo web y trabajé en proyectos reales. Aprendí a trabajar con tecnologías como React, Next.js, Tailwind CSS y TypeScript enfocado en el desarrollo frontend.",
+    link: "https://xilion.io",
   },
 ];
 ---
 
-<ol class="relative border-s border-gray-200 dark:border-gray-700">
+<ol class="relative border-s border-gray-200 ml-3">
   {EXPERIENCE.map((item) => <ExperienceItem {...item} />)}
 </ol>
